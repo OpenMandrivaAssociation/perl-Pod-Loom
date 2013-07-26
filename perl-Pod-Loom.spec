@@ -1,15 +1,15 @@
 %define upstream_name    Pod-Loom
-%define upstream_version 0.04
+%define upstream_version 0.06
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 0.06
+Release:	1
 
 Summary:	Do-nothing template for Pod::Loom
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Pod/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Pod/Pod-Loom-0.06.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -69,3 +69,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sat Jan 09 2010 cpan2dist 0.02-1mdv
 - initial mdv release, generated with cpan2dist
+
