@@ -1,16 +1,14 @@
 %define upstream_name    Pod-Loom
-%define upstream_version 0.08
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.08
+Release:	5
 
 Summary:	Do-nothing template for Pod::Loom
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/madsen/pod-loom
-Source0:	https://cpan.metacpan.org/authors/id/C/CJ/CJM/Pod-Loom-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/C/CJ/CJM/Pod-Loom-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -35,7 +33,7 @@ The document being reformatted can specify the template to use with a line
 like this:
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
